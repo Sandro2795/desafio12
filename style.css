@@ -1,0 +1,116 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
+
+:root {
+  --fonte01:Verdana, Geneva, Tahoma, sans-serif;
+  --fonte02:'Lobster', cursive;
+  --fonte03:'Sriracha', cursive;
+  --fonte04:'Passion One', cursive;
+
+}
+
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+html, body {
+  min-height: 100vh;
+  font-family: var(--fonte1);
+  
+
+}
+header {
+  background-color: black;
+  color: aliceblue;
+  text-align: center;
+}
+
+header > h1 {
+  padding-top: 50px;
+  font-variant: small-caps;
+  font-family: var(--fonte04);
+  font-weight: lighter;
+  font-size: 8vw;
+
+}
+
+header p {
+  padding-bottom: 50px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  padding: 5px;
+  font-size: larger;
+  font-weight: bolder;
+}
+
+a:hover {
+  color: gainsboro;
+  transition: 0.3s;
+}
+
+section {
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+  line-height: 2em;
+  padding-left: 30px;
+  font-family: 'Lobster', cursive;
+  font-size: 2em;
+  
+ 
+}
+
+section > p {
+  padding-bottom: 2em;
+}
+
+section.normal {
+  background-color: white;
+  color: black;
+}
+
+section.imagem {
+  background-color: rgba(0, 0, 0, 0.637);
+  color: white;
+  box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.470);
+  background-attachment: fixed;
+}
+
+section.normal > p {
+  padding-left: 7px;
+  text-align: justify;
+}
+
+section.imagem > p {
+  width: 400px;
+  background-color: rgba(0, 0, 0, 0.514);
+  padding-left: 7px;
+  text-align: justify;
+  text-shadow: 1.5px 1.5px 0px black;
+}
+
+section#img01 {
+  background-image: url(../desafio12/imagens/background001.jpg);
+  background-position: right center;
+  background-size: cover;
+
+}
+
+section#img02 {
+  background-image: url(../desafio12/imagens/background002.jpg);
+  background-size: cover;
+}
+
+footer {
+  background-color: black;
+  text-align: center;
+  color: white;
+  padding: 10px;
+}
